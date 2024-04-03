@@ -1,0 +1,103 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+}
+
+.four-col {
+	grid-column: span 4;
+	text-align: center;
+}
+
+.imgcrop{
+	height: 500px;
+	object-fit: cover;
+	object-position: left top;
+}
+
+.imgcrop-card{
+	height: 150px;
+	object-fit: cover;
+	object-position: left top;
+}
+
+
+.imggradient{
+	position: relative;
+}
+
+.imggradient::after{
+	content:'';
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	backdrop-filter: blur(2px);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+}
+
+.carddim{
+	width: 20rem;
+	margin: 15px;
+}
+
+.sitemargin{
+	margin-top: 75px;
+}
+
+.imgfit{
+	max-width: 100%;
+}
+
+.aboutstyle {
+	margin-top: 30px;
+	background-color: #404040;
+	border-style: solid;
+	border-color: #282828;
+	color: white;
+}
+
+.yearonestyle{
+	text-align: center;
+	text-decoration: underline;
+	color: #d5d5d5;
+}
+
+.flexcontainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.fleximgwrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.imagecentre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.cardcentre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.colourgradient{
+	background: linear-gradient(#22bfbf, #004d7d);
+	background-attachment: fixed;
+}
+
+.textbackdrop{
+	background: rgba(0.2, 0.2, 0.2, 0.5);
+	padding: 10px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+	rel="stylesheet" 
+	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+	crossorigin="anonymous"
+>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="colourgradient">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand text-light" href="index.html">
+				<h2>Kelsey Black</h2>
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year One Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yearone_work.html">Year One</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="portfolio_project.html">Web portfolio</a>
+							<a class="dropdown-item" href="game_project.html">Game project</a>
+							<a class="dropdown-item" href="automation_project.html">Busy Cooking</a>
+							<a class="dropdown-item" href="interactive_project.html">Split Senses</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year Two Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yeartwo_work.html">Year Two</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="group_client.html">Group client project</a>
+							<a class="dropdown-item" href="individual_rsa_project.html">Individual brief project</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year Three Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yearthree_work.html">Year Three</a>
+							<hr class="dropdown-divider">
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">Contacts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="live_cv.html">CV</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+
+<div class="container-md sitemargin textbackdrop">
+	<div class="container-md sitemargin" style="color: white;">
+		<br>
+		<h2>The brief:</h2>
+		<p>For this project, we needed to create an interactive experience that would meet one of five target audiences. Our group settled on "School groups", as our project encourages trust and collaborative work. This is because our project was a game that would take two people, one with a VR headset on, and another person with the controllers.</p>
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Researching and brainstorming:</h2>
+		<p>Initially we planned to have an educative experience focused around teaching the player how to build a PC. Originally we were thinking that we would do something similar to the game "Keep Talking And Nobody Explodes", where there would be a second player with a manual. This player would have to instruct the first player on what parts have to go in, in what order and where in the PC. The task would be timed as well to provide challenge. However, the concept of a VR PC building experience already existed in multiple forms, so we scrapped the idea in favour of something more original. At this stage, we were committed to the asymmetrical VR idea, and thus returned to the drawing board.</p>
+		<p>Our next idea was to make a maze game, with a randomly generated path each time. One player would once again have a VR headset. However in this situation, the other player without the headset would instead have the controllers. This would mean that the player with the headset would have to guide the "blind" player, hence the name "Split Senses". The goal would be to guide the player with the controllers along a maze made of platforms which is suspended above a pit of spikes. The game would require clear communication and would encourage collaboration between players to reach the end of the maze.</p>
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Development process:</h2>
+		<p>First, I needed to do research onto how to make a VR project. I initially started by trying to run the VR template, to no avail. Upon having issues with building the project, I decided to start over with a blank project, following a guide on how to set up a project for VR in unity. Once again, I couldn't build the project. Upon proper inspection of the errors that were being spat back at me, I noticed that the problem seemed to lie in android.</p>
+		<p>Inspecting the file paths for the files which were causing errors made me realise that it was because of android studio which I had installed for the previous project. Because of this I had to uninstall android studio from my PC, which somehow made the project build correctly. With this issue resolved it allowed me to continue development of my section of the project. First I implemented controls. I was able to reuse the <a href="images/splitsenses/splitsensesmovementcode.png" target="_blank">code</a> from a demonstration of how the controls would work that had been made by myself a few weeks previously.</p> 
+		<img src="images/splitsenses/splitsenses_movementdemo.gif" class="mx-auto d-block imgfit">
+		<p>With this in place, I then started focusing on implementing gravity and collisions. This was a simple matter of giving the player a box collider and a rigidbody with rotation turned off, to prevent any issues with the camera falling over which would disrupt the controls.</p>
+		<img src="images/splitsenses/gravity_collision.png" class="mx-auto d-block imgfit">
+		<p>Alongside this, I was periodically making sure to merge code with my fellow devs, using <a href="https://github.com/floorceiling/split-senses-Group-6">GitHub</a>, which I had never used before. This allowed me the chance to learn how to use GitHub for collaborative coding and working with others on a single group.</p>
+		<img src="images/splitsenses/finaldemo.gif" class="mx-auto d-block imgfit">
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>The final outcome:</h2>
+		<p>The project was properly merged allowing us to have a fully working game, that would generate a path. If given the opportunity to remake this project, it would have been ideal to have started with the project on GitHub rather than starting partway through.</p>
+
+	</div>
+</div>
+</body>
+</html>

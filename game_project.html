@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+	rel="stylesheet" 
+	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+	crossorigin="anonymous"
+>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="colourgradient">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand text-light" href="index.html">
+				<h2>Kelsey Black</h2>
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year One Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yearone_work.html">Year One</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="portfolio_project.html">Web portfolio</a>
+							<a class="dropdown-item" href="game_project.html">Game project</a>
+							<a class="dropdown-item" href="automation_project.html">Busy Cooking</a>
+							<a class="dropdown-item" href="interactive_project.html">Split Senses</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year Two Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yeartwo_work.html">Year Two</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="group_client.html">Group client project</a>
+							<a class="dropdown-item" href="individual_rsa_project.html">Individual brief project</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year Three Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yearthree_work.html">Year Three</a>
+							<hr class="dropdown-divider">
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">Contacts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="live_cv.html">CV</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+<div class="container-md sitemargin textbackdrop">
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>The brief:</h2>
+		<p>In the second half of our first term, we were assigned a group project of creating a game to educate children aged 12-15 on the Sustainable Development Goal 7 (SDG7). The group project pulled from members across several disciplines such as digital designers, 3D environment artists and CAD students. We each had a role to play within our group and I was tasked with creating the puzzles for the game, which would allow the player to progress upon solving them. </p>
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Researching and brainstorming:</h2>
+		<p>Our game had several different distinct areas that would be accessed via portals. In each area there was a different biome which utilised various forms of cleaner energy. The initial idea was to have each area have a unique puzzle style. Due to us not having time to make all 5 areas we planned, we settled on the desert area. When I was tasked with making the puzzles, I decided straight away that a numberlink puzzle would best fit the area, as the energy source for the area was solar powered. The numberlink simulated a circuit that would cause the solar panels to work again.</p>
+
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Prototyping:</h2>
+		<p>My main inspiration I drew upon while making the prototypes and eventual final version of my game was another well known numberlink puzzle by the name of Flow Free®. The software I used to make the game was Unity and Sublime Text, written in C#. My game went through several distinct phases, with a roadmap of goals that defined key stages in the development. The key stages are as follows:</p>
+		<ul>
+			<li>Create a grid of cells that can be toggled on and off, generated from a single cell.</li>
+			<li>Drag through the cells to toggle them on and off, but only if you are dragging from an already active cell or the start point.</li>
+			<li>Only be able to drag from the end cell of the path, and enabling erasure of the line by doubling back or overlapping the path with itself.</li>
+			<li>Multiple colours (and preventing paths of different colours overlapping)</li>
+		</ul>
+		<p><br>With this path it allowed me to create a fully functional numberlink puzzle which is fully rendered using code within Unity, as opposed to working with sprites to create the lines and end points.</p>
+		<div class="container-md sitemargin flexcontainer">
+			<div class="card mx-auto carddim">
+				<img src="images/numberlink.gif">				
+			</div>
+			<div class="card mx-auto carddim">
+				<img src="images/numberlink2.gif">				
+			</div>	
+			<div class="card mx-auto carddim">
+				<img src="images/numberlink3.gif">				
+			</div>
+		</div>
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>The final outcome:</h2>
+		<p>The final outcome of my work was a numberlink which was rendered entirely using C# and Unity, would allow for easy editing using the level maker script and had multiple directions it could be taken to expand upon the idea for making more challenging puzzles for the specific area, which could unlock collectables.</p>
+		<img src="images/numberlinkfinal.gif" class="mx-auto d-block imgfit">
+	</div>
+</div>
+<br>
+</body>
+</html>
