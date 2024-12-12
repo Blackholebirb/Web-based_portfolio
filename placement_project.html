@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+	rel="stylesheet" 
+	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+	crossorigin="anonymous"
+>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="colourgradient">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand text-light" href="index.html">
+				<h2>Kelsey Black</h2>
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year One Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yearone_work.html">Year One</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="portfolio_project.html">Web portfolio</a>
+							<a class="dropdown-item" href="game_project.html">Game project</a>
+							<a class="dropdown-item" href="automation_project.html">Busy Cooking</a>
+							<a class="dropdown-item" href="interactive_project.html">Split Senses</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year Two Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yeartwo_work.html">Year Two</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="group_client.html">Group client project</a>
+							<a class="dropdown-item" href="individual_rsa_project.html">Individual brief project</a>
+							<a class="dropdown-item" href="social_media_campaign.html">Social Media Campaign</a>
+							<a class="dropdown-item" href="glyde_project_part1.html">Glyde (Part 1)</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Year Three Work
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="yearthree_work.html">Year Three</a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" href="placement_project.html">Placement Project</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts.html">Contacts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="live_cv.html">CV</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+<div class="container-md sitemargin textbackdrop">
+	<div class="container-md sitemargin flexcontainer" style="max-width:75%; color:rgb(220, 220, 220);">
+			<img src="images/placement/placement_main.png" class="mx-auto d-block imgfit">
+	</div>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>The brief:</h2>
+		<p>For this module I needed to find a work placement. This module is designed to help allow us to get good industry experience while also giving us practice in our field of study. It would also be a good opportunity to expand our CVs, which would aid in employability upon graduating. The aim would be to try and find placement during the tailend of our second year, so we could start it straight away in our third year, or during the summer.</p>
+		<p>Unfortunately, I was unable to find a placement over the summer, with one company not taking placements at time of contact, and others not responding to my emails. Because of this I had to arrange an alternative solution to allow me to still be able to get some extra experience this semester. The compromise I was met with was to do a small project brief, with less focus on making a full functioning game, but instead focusing on developing a fully functioning complete system. This would be more accurate to the work I would have been tasked with in a work environment. Furthermore, the nature of the project lead to no requirement for any relevant handover documents as my partner was able to see all the work I was doing as I did it.</p>
+	</div>
+	<br>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Researching and brainstorming:</h2>
+		<p>With this task assigned, I started planning what systems I could work on, and what game engine I should do it in. As Unreal Engine will be the primary focus of my second semester work, I decided to choose to use this game engine. Secondly, I needed to decide what systems I would be implementing over the course of this project. As my partner was working on a Sokoban puzzle game beforehand I offered to both create an undo mechanic for his game, and also create a level loading system to load different stages.</p>
+		<p>Sokoban (which translates to "Warehouse keeper") puzzles are a variety of puzzle games in which the player pushes around boxes in a grid based system, to get them to predestined locations. For the level to be complete, each box has to be occupying one of these locations. The player is able to move one box at a time, with boxes being unable to push other boxes and boxes only being able to be pushed -- not pulled. Our game expanded upon this basis with implementation of alternate block types. These blocks would move in different ways, for example one which would move two tiles instead of one or a block that lands behind you when you push it. This added functionality would require more consideration about how to pull off an undo mechanic. </p>
+		<p>This project used Unreal Engine's node-based coding interface called "Blueprints". The reason for this choice was because this project served as my partner's introduction into using the Unreal Engine interface, and thus for the sake of simplicity chose to use blueprints. This decision was further amplified by most tutorials for beginning in Unreal Engine being done using Blueprints, as well as C++ based approaches generally having much less documentation in Unreal. It was done for the sake of simplicity, although in future we would move to using C++, due to C++ being faster on average and offering more control.</p>
+		<p>As this project was undertaken with the primary purpose of expanding my technical skills, a need to consider target audience and aesthetics was not necessary. Research undertaken delved into the technical feasibility of the tasks I had chosen to undertake as part of my work for this module. As the game did not yet have a main menu or a level select screen and creating one was something that was new to both of us, I set about researching how to go about making one. My primary source of information on how to set up a main menu came through online video tutorials on YouTube.</p>
+		<p>We reached the conclusion that doing research into an undo mechanic would be arduous, and ultimately pointless. This was due to the work he had already done being relatively future-proofed using appropriate Object-Oriented Programming principles, with careful planning to ensure that implementing an undo function would be straightforward. Additionally as he has more prior development experience, it opened up the opportunity of development utilising the technique of pair programming. As this would be an Expert-Novice pairing in terms of raw programming experience, it allowed the development progress to go a lot more smoothly.</p>
+	</div>
+	<br>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Development:</h2>
+		<h4>Menu and level selection:</h4>
+		<p>The first thing necessary for creating both a main menu and a level selection screen would be to set about creating a level object specifically for the menu widget. This would allow the game to save on resources by only having necessary assets loaded -- in this case none, aside from the widgets. Additionally, it would be necessary for creating a level-specific blueprint to automatically create the widget and apply it to the viewport. This would allow us to have essential features such as an options menu, a button to exit the game, and of course a way to access levels.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/placement_main.png" class="mx-auto d-block imgfit">
+		</div>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/placement_levelselect.png" class="mx-auto d-block imgfit">
+		</div>
+		<br>
+		<p>Following this, the next step would be to create widgets. Due to this project being more of an exercise in expanding our technical skills, the menu was designed with less focus on graphic design and more focus on functionality and readability. Starting with the main menu page, I created 3 buttons and then additionally a text box which is used type out the current running game project name - also known as "Sokoban Ex". The buttons would be used to navigate to the level select, open an options page (although no options have been implemented at the time of writing) and to exit the game. The blueprints which are used to access these were incredibly easy to set up, with one dedicated to opening the level select menu, and one that exits the game.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:50%;">
+			<img src="images/placement/placement_menu_BP.png" class="mx-auto d-block imgfit">
+		</div>
+		<br>
+		<p>The level selection followed a mostly identical process. The game would eventually have a much larger number of levels, which obviously necessitates a scalable solution as opposed to copy and pasting the same button multiple times.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/levelloading.gif" class="mx-auto d-block imgfit">
+		</div>
+		<br>
+		<h4>Undo System:</h4>
+		<p>The undo system was actually the first system developed upon my induction to this project. This system was developed using pair programming, allowing my partner to quickly catch me up on the work he already did while aiding me in developing a system I was unsure how to begin. As he is a more experienced developer, the code he wrote so far had already gone through a few rounds of rewriting to improve its overall structure and was thus very modular at this point. This also smoothed the process of implementing an undo feature as this took advantage of his existing work to build up the basic functionality.</p>
+		<p>The first step to implementing an undo function would be a way to track what the previous order of operations were to reach the state of the board at that moment in time. My initial thoughts of how to go about achieving this would be to keep track of all player directional inputs, and play them in reverse. I also thought to implement the box movement by checking for if the player was near any crates during the undo, and check for if there was also a flag for a box movement stored alongside the player movement in that undo step.</p>
+		<p>This thought process highlights how important pair programming was for helping me improve my programming skills, as my partner pointed out that this solution was needlessly complicated due to requiring behaviour for every "reverse" interaction with every object to be written. Instead, he proposed a much more straightforward method of storing the world coordinates of each moveable object every time the player made a movement. These coordinates would be stored in an array, and due to the nature of coordinates it meant that this also was more lightweight than it may initially sound. Then, whenever the player would press the undo button the program would simply access the last vector in each object's arrays, set that to their world position and delete the last index of the array.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/placement_coord_BP.png" class="mx-auto d-block imgfit">
+		</div>		
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/coord_store_BP.png" class="mx-auto d-block imgfit">
+		</div>
+		<br>
+		<p>The blueprints above demonstrate how the coordinates were saved. As each block was part of a generic crate class that was then expanded upon individually, it meant we were able to simply get everything that utilised that base class and put them together in an array. For each crate, an array was assigned that would keep track of the coordinates for that crate upon receiving player movement input. A similar thing was done for the player character, although this was more straightforward as there is only one player character.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/crate_undo_BP.png" class="mx-auto d-block imgfit">
+		</div>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/player_undo_BP.png" class="mx-auto d-block imgfit">
+		</div>
+		<br>
+		<p>These blueprints showcase the process of undoing the last move utilising the stored coordinates. This would run through all crates in a level, get the last index of each crate's arrays, the associated coordinate and use that to assign the crate's world position. Following this, it would then remove that index from the array meaning the undo would actually cycle backwards through all the coordinates. The player's movement was an identical process.</p>				
+		<p>This solution was very straightforward to implement due to the work done to structure the existing game framework. A prime example of this is how each crate type was created -- not as distinct crates with entire functionalities per crate but instead building from a template. Each crate type works from a base generic crate type, with different movement rules simply being a number change attached to each crate itself. This planning and foresight was a valuable learning lesson for how to more effectively plan out and structure my projects in future, taking into account future needs or even planning for additional wants that may show up later down the line.</p>
+		<p>This simple but elegant solution worked nearly perfectly, with some minor hiccups arising due to how the game handled player movement and the lack of a failsafe to prevent undoing while no movements had been made yet. The latter issue was an easy fix, solvable by checking if the length of the player movement array was equal to 0 (meaning there was no coordinates saved yet) upon the undo button being pressed. If this was indeed the case, then the undo button would simply do nothing.</p> 
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/array_length_BP.png" class="mx-auto d-block imgfit">
+		</div>		
+		<p>The most major issue occured whenever the player attempted to move into a tile where they could not, such as the boundary walls or a tile that could not be pushed. Under these circumstances the game would register player movement every tick, causing many coordinate additions even if the player only tapped a movement direction once. Our initial thought to remedy this problem would be to move when it would store the coordinates to another blueprint entirely. This seemed to work initially, until it came to light that this new position caused the coordinate saving system to have a slight delay. The result of this slight delay meant that the player's previous position would not be saved, as the coordinate saving took place after the player had moved. After this issue occured, the realisation that the fix was much simpler came to light. The coordinate saving system was moved back to it's original blueprint, along with an accompanying branch to check if the player could actually move preceding it.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/relocated_coord_BP.png" class="mx-auto d-block imgfit">
+		</div>
+		<br>
+		<p>The issue with the placement of the coordinate storing in the above screenshot is because of how the global movement cooldown works. This would only reach 0 after the player had moved, meaning the first coordinate saved to their movement array would be the tile they are stood on after having moving. This applied to all blocks pushed as well, meaning the first undo would always do nothing. Obviously this was a big issue, but was thankfully a straightforward fix.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/coord_check_BP.png" class="mx-auto d-block imgfit">
+		</div>				
+		<p>This collaborative troubleshooting gave me a positive insight into how it would be like to work among other developers in an office environment. It also gave me some experience on the process of fixing bugs in a broader sense. Until now many bugs I ran into had relatively straightforward fixes, but this highlighted the care and attention that needs to be put into more complex systems where the cause of bugs is less clear and could be in multiple different places.</p>
+		<div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+			<img src="images/placement/undofunc.gif" class="mx-auto d-block imgfit">
+		</div>		
+		<br>
+		<h4>Collaborative Development:</h4>
+		<p>One of the key parts of developing collaboratively was the utilisation of git to upload our code to GitHub. Git is another piece of software which is crucial to collaborative coding, as it helps allow developers to work on the same projects simultaneously. This is an important technical skill to get into the practice of using and highlights the potential of learning other softwares and skills that weren't originally planned for but still necessary for working efficiently. The process was relatively simple and straightforward to set up a local repository on my PC, with the process being smoothed over immensely via the aid of my partner. It was further simplified by using the GitHub desktop client as opposed to command line git, although command line git is a lot more flexible -- if not more obtuse.</p>
+		<p>This was another place where our decision to use Blueprints over C++ ended up affecting our development. Git has a lot of sophisticated built-in tools to properly combine changes from two different people working on the same things at the same time. However a lot of that functionality only works for text files and completely fails for the Blueprint code, which is another reason we would like to move to C++ in the future for development in Unreal Engine. As a result, we both had to be very careful that our changes never overlapped at all whenever we were both programming for the game at the same time.</p>
+		<p>There was one incident where our changes happened to overlap on some files, which caused a merge conflict - an event where git does not know which of two sets of changes to choose due to its automatic change-combining tools failing. We suspect it is because moving any node in a Blueprint (even if this does not change functionality) causes the file contents to be changed unpredictably and therefore git ends up needing to overwrite one change with another. This was something we had to work through together, looking through our changes file by file to understand what either of us did and which ones had changes that were safe to discard. Resolving the code conflict was another process which I would have hoped to gain experience in within a proper placement as well.</p>
+	</div>
+	<br>
+	<br>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Reflection and retrospection:</h2>
+		<p>Upon the completion of this project, there were some major parallels to be drawn between the differences between an actual placement and the work undertaken during the duration of this project. One major difference is the variety of skills acquired in a placement. For example, despite my partner being much more skilled in development and thus being able to teach me many related and adjacent technical skills, I was unable to gain many other skills. In a placement environment, There would have been more skills gained than just technical skills, such as raw work experience and larger scale collaborative work. Other skills that were negatively affected were time management skills. The biggest drawback to being unable to find a placement was that it resulted in my work being less structured. As a result, time management wasn't as high a priority as it otherwise should have been and would have been important to better consider the timeline of this project. Not being left with enough time is something that will be an important take away going forward with other projects.</p>
+		<p>Despite the numerous issues that arose due to not being able to find an official placement, there were many analogous components to be compared to working in the field of game development. One major component of working in this field among co-workers is the need to work towards a common goal. This collaborative effort is the key component to developing in a team, and was a skill that was exercised throughout this project. Maintaining clear communication on what we were each working on helped prevent us from working on the same thing simultaneously, while also keeping track on how general development was going. Additionally, the foresight to futureproof the basis that my partner built the rest of the project up from would also serve as a good reference for the quality I would expect when working in the field. This in particular was extremely important as it highlighted the difference in development skills between novice and experienced developers. Prior to this project I had only ever worked with other students, all of whom were around a similar skill level to myself. The significance of this in particular is it provides novice developers access to people who will be able to guide them and urge them on, furthering their growth much more than working with those of a similar skill level would. Additionally, having a human resource I am able to turn to for aid in development will be important in noting where exactly I am weakest in my skillset, which will help bolster my knowledge and confidence as a developer.</p>
+	</div>
+	<br>
+	<br>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Trials and tribulations:</h2>
+		<p>The biggest issue that this project faced was the inability to land an official placement with a game development company. With not many options on the market at the moment - and those that are mainly being companies that are after more experienced individuals - finding a company that would be willing to take on a student for a temporary placement is difficult. This is further emphasised by the possibility of this placement being entirely remote depending on where the company is located or companies simply saying pre-emptively that they aren't looking for placements. Additionally, with no prior work experience, finding a company for a placement is more challenging.</p>
+		<p>In future, I think it would benefit me to be more aggressive about sending out offers to many companies, accepting that some opportunities would be less than ideal compared to other jobs. I also would need to accept that many of these companies would not end up responding, or responding with a no. Additionally, networking would be important to increase chances of finding a work placement as contacting people directly would be helpful for increasing odds of a placement being accepted.</p>
+		<p>Another issue was my lack of effective time management and the absence of any back-up plans. I did not have a contingency plan in place for if I failed to find a placement, thus setting me back in terms of my work. This was poor planning on my end, and should have been remedied before the third year started. Unfortunately my own inexperience with finding work shone through and highlighted how reliant I was upon getting a work placement at one specific company. With correspondences running deep into the summer and responses being slow, I had not left myself time to find a new placement provided I didn't get a position at the first company. Failing to get a placement had adverse knock-on effects that I hadn't foreseen, such as not creating any official or structured time management, instead creating one last minute to aid in completing this module.</p>
+		<p>In similar situations in the future, this could be remedied by planning for less fortunate eventualities. For example it would have been worth actively communicating with more game development companies over the summer, checking to see if any more positions had become available. This is an important lesson to learn, and will be crucial to keep in mind when I graduate next summer.</p>
+	</div>
+	<br>
+	<br>
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>The final outcome:</h2>
+		<p>Coming to the end of this module, I have gained a much greater understanding of where I personally stand in terms of my development journey. This has been extremely useful in highlighting how much more I still need to learn and has given me greater insight into how to more effectively plan and develop a longer term project. Additionally, this project was beneficial both for myself and my partner, as it allowed him to focus on more indepth systems while I was able to learn how to better structure my code. It also gave me an environment where I felt more comfortable being honest with myself about my currently weak development skills, that I otherwise may have been stressed about in a placement environment. Working with someone who knows me more personally as well allowed for more effective feedback, due to prior knowledge of my skills, strengths and weaknesses already being possessed by my partner.</p>
+		<p>While this project also didn't directly feed into our needing to consider the Sustainable Development Goal 12, I was able to balance my own consumer behaviour via the fact of myself and my partner not needing to travel anywhere to work on this project together.</p>
+	</div>
+
+	<div class="container-md sitemargin" style="color: white;">
+		<h2>Appendices:</h2>
+		<p>1. Link to online portfolio</p>
+		<p><a href="https://blackholebirb.github.io/Web-based_portfolio/">https://blackholebirb.github.io/Web-based_portfolio/</a></p>
+		<br>
+		<p>2. Live CV</p>
+		<p><a href="file:///C:/Users/Klbla/Documents/webbased_portfolio/Web-based_portfolio/live_cv.html">Current live CV</a></p>
+		<br>		
+		<p>3. References</p>
+		<p>Adrian Martinez (2022) <i>Tutorial - How To Create A Level Selector In Unreal Engine</i>. Available at: <a href="https://youtu.be/ukUp0g4OWSM?si=EI13ie4jJgmCbUX_">https://youtu.be/ukUp0g4OWSM?si=EI13ie4jJgmCbUX_</a> [Accessed: 06 December 2024].</p>
+		<p><i>Unreal Engine</i> (2024) Blueprints Visual Scrpiting in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community Available at: <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/blueprints-visual-scripting-in-unreal-engine">https://dev.epicgames.com/documentation/en-us/unreal-engine/blueprints-visual-scripting-in-unreal-engine</a> </p>
+		<br>
+		<p>4. Updated Negotiated Learning Agreement (NLT1) form</p>
+		<p><object data="Y2S2-BSc-Yr3StudyPlan-NegotiatedPlacementTask1Proposal-2024 - updated.pdf" type="application/pdf" width="100%" height="1000px"></p>
+		<br>
+
+	</div>	
+</div>
+<br>
+</body>
+</html>
