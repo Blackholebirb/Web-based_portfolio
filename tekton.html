@@ -56,6 +56,7 @@
                             <a class="dropdown-item" href="yearthree_work.html">Year Three</a>
                             <hr class="dropdown-divider">
                             <a class="dropdown-item" href="placement_project.html">Placement project</a>
+                            <a class="dropdown-item" href="tekton.html">Tekton</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -74,28 +75,116 @@ A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="a
     <div class="container-md sitemargin textbackdrop">
         <div class="container-md sitemargin" style="color: white;">
             <h2>Introduction:</h2>
-            <p>This project served as a follow-up to my case study that was undertaken last year. Tekton designed to be a practical application of the result of the research undertaken, applying the knowledge gained. This case study focused on the effects playing video games could have on creative expression. This included primary research in the form of a survey that not only gauged how video games impacted people's creativity, but also if they'd be interested in that style of game. This research helped direct what style of game that was made for this module.</p>
-            <p>Tekton was designed to be a somewhat minimal voxel sandbox game, with emphasis placed on building structures. This would be achieved through use of building tools to allow players to rapidly create and terraform their environment, rather than one block at a time like other voxel sandbox games. Tekton was built on the prin</p>
+            <p>This project served as a follow-up to my case study that was undertaken last year. Tekton was designed to be a practical application of the result of the research undertaken, applying the knowledge gained. This case study focused on the effects playing video games could have on creative expression. This included primary research in the form of a survey that not only gauged how video games impacted people's creativity, but also if they'd be interested in that style of game. This research helped direct what style of game that was made for this module.</p>
+            <p>Tekton was designed to be a somewhat minimal voxel sandbox game, with emphasis placed on building structures. This would be achieved through use of building tools to allow players to rapidly create and terraform their environment, rather than one block at a time like other voxel sandbox games.</p>
         </div>
         <br>
         <br>
         <div class="container-md sitemargin" style="color: white;">
             <h2>Researching and brainstorming:</h2>
             <p>During the case study, one roadblock that was faced with research was the challenge of defining creativity. Despite being such a prevalent thing, creativity is challenging to measure from an academic perspective, as is the case with many psychological resources. This is an issue that is addressed in many research papers that have been written about this topic. Because of this there are many different ways to measure creativity.</p>
+            
             <p>It is also necessary to be more specific while discussing creativity as a whole as it is very open to interpretation. A key example of this was through a paper that was read while writing this case study. In this paper, creativity was considered through the perspective of tackling adversities that were present in life. This differs from the consideration of the case study which sought to measure creativity through means of self-expression in art forms.</p>
-            <p>While the primary research conducted didn't show the desired results of a positive correlation on time spent playing games and time spent engaging with a creative hobby, the rest of the results seemed to show that the vast amount of people would have some degree of interest in playing a game that allowed the player to be creative. The feedback gotten from these people helped inform the decisions for what direction to take Tekton in.</p>
+            
+            <p>Despite the secondary research measuring creativity differently than what was initially sought at the start of the case study, it did offer credence to the application of a video game for this purpose. Furthermore, several papers on this topic reviewed inherently creative games such as Minecraft. This served as the basis for the direction Tekton would eventually take.</p>
+            
+            <p>While the primary research conducted didn't show the desired results of a positive correlation on time spent playing games and time spent engaging with a creative hobby, the rest of the results seemed to show that the vast amount of people would have some degree of interest in playing a game that allowed the player to be creative. This was supported by a large majority of participants of the survey reporting feeling more creatively inspired due to time spent playing video games.</p> 
+
+            <p>The feedback gotten from this survey helped inform the decisions for what direction to take Tekton in. There were multiple different interpretations on what would warrant a game designed to encourage creativity. Some responses suggested making a puzzle game, with flexible solutions to let the player solve it in unique ways. One response said that they would be in interested in a city building game. Overall, the vast majority of responses seemed to point towards interest in playing a sandbox game.</p>
+            
+            <p>This project required research to be done into OpenGL and what it is. This meant getting an understanding of how it worked, and some of the maths behind how the shader systems work to make objects render. For example it required an understanding of how matrix maths works, as the order in which matrix operations are done can have drastic impacts on how something renders.</p>
         </div>
         <br>
         <br>
         <div class="container-md sitemargin" style="color: white;">
-            <h2>Trials and tribulations:</h2>
-            <p></p>
+            <h2>Planning and Development:</h2>
+            <p>Before starting to develop Tekton, it was important to do research into how to develop a sandbox voxel game. Going into this project, I was aware that using a pre-existing game engine would most likely be detrimental for a multitude of reasons such as performance. This meant that the first step was choosing what language I wanted to code in, and what options there were for creating an engine in that language. As it is likely to be the language I'm most frequently exposed to in development, I chose to go for C# for Tekton. At the same time I needed to find out how to render a 3D game without the assistance of a game engine. The simplest solution for this seemed to be through the use of OpenGL, which is now the standard for 2D and 3D vector graphics. As I was going to be using C#, this necessitated finding a library that added bindings for OpenGL which I found in the form of
+                <a href="https://opentk.net/" style="color: #d09000;">OpenTK</a>.</p>
+
+            <p>After choosing the language and how to go about rendering the game, the next step was planning game details and gameplay. As this was intended to be a smaller demo, the plan was to keep the world size limited. This would also help keep the filesize for the world small, which would encourage people to share their worlds to friends to show off the things they had built. Initially, the consideration was for a cube shaped world of 100*100*100. This was dismissed however, as that size felt like it could be too restricting to players if they wanted to build bigger structures. For this reason, the world size that was settled on was a 256*128*256, with emphasis being placed on being able to build more horizontally than vertically.</p>
+
+            <p>The blocks themselves would be handled via an HSV (Hue, Saturation and Value) menu. Each block would have a smooth hue selection of 16 possible unique hues. This would then be further subdivided into a coarse selection for saturation and value, with 4 options for each. This would allow you to have 256 total unique block colours to select from, providing the player with a large range of options to select from. On top of this, each block would have a texture option you could select alongside the colour. In the initial planning, there were only going to be 4 textures. However, this proved to be too limiting in hindsight, so at this stage in development there are 8 textures instead. This would provide the player up to 2048 different unique block types, which would give the player a lot of flexibilty.</p>
+            <div id="carouselHero" class="carousel slide mx-auto w-25" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="carouselHero" data-bs-slide-to="0" class="active" aria-current="true"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="1"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="2"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="3"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="4"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="5"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="6"></li>
+                    <li data-bs-target="carouselHero" data-bs-slide-to="7"></li>
+                    <li></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images\tekton\textures\dirt.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\cobble.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\grass.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\stone.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\sand.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\wood.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\brick.png" class="d-block mx-auto w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images\tekton\textures\wool.png" class="d-block mx-auto w-75">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselHero" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselHero" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+            <br>
+
+            <p>The first step of developing Tekton was learning how to render objects through OpenGL. As this was all self-coded rendering, it meant that this started with creating a basic blank window. Following this a vertex shader needed to be written, and fed vertex data about a triangle. This vertex data is done through an array of floats, each corresponding to a coordinate in 3D space going from -1 to +1. The vertex shader (and the fragment shader that comes later) are written in OpenGL Shading Language (GLSL). The Fragment shader comes after the vertex shader, and is responsible for colouring, texturing and lighting.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/tekton/tektontriangle.png" class="mx-auto d-block imgfit">
+                <img src="images/tekton/tektonsquare.png" class="mx-auto d-block imgfit">
+            </div>      
+            <p>Adding more coordinates to the array of vertex data allows you to create more and more complex shapes. This lets you progress from just one triangle to two making a square, and then from two triangles to 12, making up a full cube. Utilising 3 matrices (Model, View and Projection), this cube can then be properly projected into screen space for more practical usage. Couple this with a camera and controls, and now you have a full 3D environment you can move around in.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/tekton/tektonblock.png" class="mx-auto d-block imgfit">
+            </div>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/tekton/tektonflat.png" class="mx-auto d-block imgfit">
+            </div> 
         </div>
         <br>
         <br>
         <div class="container-md sitemargin" style="color: white;">
-            <h2>The final outcome:</h2>
-            <p></p>
+            <h2>Time Management:</h2>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+              <img src="images/tekton/tektonchart.png" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <p>The time management for this project was done through a Gantt Chart. Tekton was broken down into the main key features that would be implemented. While this timeline initially seemed to allot an appropriate amount of time to each section, this proved to be inaccurate. Unfortunately, this project faced a large pitfall in that it was an extremely ambitious project for the time available. As this was a project done entirely through C# without the assistance of a game engine, it meant that the game's complexity increased drastically and the scope of the project was more than could be accomplished in the several month window that was available for the duration of this project.</p>
+
+            <p>Another issue this project faced was poor implementation of contingency plans. This is due to the scope of the project seeming smaller than it actually was, thus meaning all of the times were extremely optimistic. As of this large scope, one of the contingency plans that arose was decreasing the scope of the project. While this did mean at this stage in the game there would have been a lot less block choices by removing the HSL slider function, it was necessary to make the game smaller scope. Furthermore, due to learning OpenTK in this project (and in the process OpenGL and GLSL), this meant that there were extreme delays that were felt throughout the entire project. This lead to a lot of time being lost to researching how to use OpenGL and GLSL itself, and is the ultimate reason this project concluded in an unfinished state.</p>
+        </div>
+        <br>
+        <br>
+        <div class="container-md sitemargin" style="color: white;">
+            <h2>Conclusion:</h2>
+            <p>In conclusion, while Tekton was ultimately a failed project due to not reaching a stage of having any concrete gameplay, it served as a good learning experience. In hindsight, this project would have been best undertaken by someone with more prior experience in C# than I was going into the project. While I am unlikely to use OpenGL for any projects going forward, it gave some valuable insights into how the 3D rendering pipeline works, and served as a trial by fire in learning C# skills.</p>
+
+            <p>Additionally, while the project remains unfinished at this point in time, Tekton showed promise to be a tool for creative use akin to a 3D modelling software. As is the case of many voxel sandbox games, the freedom granted to shape your world as you please is an exercise of creativity and would encourage people to do whatever they like. Furthermore, while it is possible that people would not feel inclined to practice a creative hobby outside of the game, the tools offered to the player allow them to treat the world as their canvas.</p>
+
+            <p>The next steps for Tekton would mostly consist of spending time tackling other projects to sharpen my C# skills before returning to this project. Additional experience with C# would allow for the game to make more progress, as the biggest roadblock for a lot of this project was a lack of baseline knowledge on how to utilise OpenTK to its fullest. Furthermore, it would be wise to tackle this project on its own rather than working on it alongside another game project. This stacked workload slowed down progress on both game projects drastically, causing there to be less progress made than hoped for.</p>
         </div>
     </div>
 </body>
