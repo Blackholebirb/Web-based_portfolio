@@ -78,26 +78,163 @@
 A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <div class="container-md sitemargin textbackdrop">
         <div class="container-md sitemargin" style="color: white;">
-            <h2>The brief:</h2>
-            <p></p>
+            <h2>Introduction:</h2>
+            <p>This is a continuation of <a href="https://blackholebirb.github.io/Web-based_portfolio/glyde_project_part1.html">Glyde</a> that was undertaken as one of my end of year projects for my third year. This project in particular served as a way to allow us to further hone our skills in whatever way we thought would be most practical. I chose to continue Glyde as my negotiated development project as there was a lot that could have been improved upon after last year while giving me a chance to gain more experience with Unreal Engine. It was left in a relatively unfinished state at the end of my second year, thus the game showed a lot of promise for improvement in multiple different sections of the game. Among these changes were switching away from default Unreal Engine assets, tweaking the movement systems and other core functionality that would be expected from a game.</p>
+            
+            <p>Furthermore this served as an opportunity to learn some more visual design skills, allowing me to take a step into creating custom materials and experimenting with Unreal Engine's Niagara System -- which is used to create particles. Alongside receiving improvements to the core gameplay, the fresh coat of paint lended by focusing on improving the visuals helped improve the quality of Glyde at this early stage. As Glyde inherently is a low-stakes and low-stress game, putting an emphasis on the visual aspects on the game is important as it helps give the game a sense of character, allowing players to understand at an initial glance what they'd be getting into.</p>
+
+            <p>One of the things we also had to keep in mind for this module was the Sustainable Development Goal 10 (SDG10), which is "Reduced inequality within and among countries". Due to the nature of this game this isn't relevant to Glyde, and also doesn't link to my work due to being a game developer -- however there are a couple ways it could theoretically be tied in. One of these ways is by aiming for inclusivity by having a diverse cast of characters with a focus on representation -- although this is a poor way to handle inclusivity as if done incorrently could come across as pandering or queerbaiting.</p>
         </div>
         <br>
         <br>
         <div class="container-md sitemargin" style="color: white;">
             <h2>Researching and brainstorming:</h2>
-            <p></p>
+            <p>As this was the second stage in developing Glyde, there wasn't as much brainstorming and research that needed doing. However one important piece of brainstorming that had been skipped in the first stage of development for Glyde was creating a storyboard. This was necessary for getting an understanding of the world, as storyboarding is a useful tool for worldbuilding and getting a greater sense for how the game will play. This storyboard not only helped to give the game a more solid background, but also allowed for multiple gameplay elements to arise too, while also changing up some existing ideas that were already in place for more interesting alternatives.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_storyboard.png" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Research that was performed during the duration of this project mainly focused on learning new skills in using features of Unreal Engine I had never had the opportunity to use before. This included learning how the Niagara System -- the Unreal Engine particle system -- worked, and delving into making custom materials.</p>
+            <p>This section of the project also served to allow me to exercise some of my art skills that had been developed throughout the span of the past year. This was used to make a couple of pieces of concept art, while also further refining the current existing concepts, such as Glyde's design. The final design that was chosen for Glyde was influenced by the designs of other anthropomorphic bird species in media, for example the <a href="https://zeldawiki.wiki/wiki/Rito">Rito</a> from The Legend of Zelda. Additionally as he previously didn't have a bird species he was based after, his design was styled to reflect that of a certain variant of the Long-Tailed tit, known as the Japanese Snow Fairy.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_concept.png" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The other piece of concept art was created for the healing seeds. As it was supposed to be an item that would heal Glyde -- granting the player increased stamina -- the seed was designed to resemble the <a href="https://en.wikipedia.org/wiki/Rod_of_Asclepius">Staff of Asclepius</a>, a widely known symbol associated with healing (and belonging to the greek god of medicine, Asclepius). This staff is depicted with a snake wrapped around a staff, so the green spiraling pattern was designed to be remminiscent of this, leading into the sprout which then has a red marking to represent snake eyes.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:25%;">
+                <img src="images/glyde_p2/Healing seed_w_eyes.png" class="mx-auto d-block imgfit">
+            </div>
         </div>
         <br>
         <br>
         <div class="container-md sitemargin" style="color: white;">
-            <h2>Trials and tribulations:</h2>
+            <h2>Development:</h2>
             <p></p>
+            <h3>Gameplay:</h3>
+            <p>The first feature to be implemented as part of the Gantt chart I was following for time management was a main menu. This ended up being very basic due to failing to implement a select couple of features, but would allow you to quit the game or launch it. There was also an options button, but this did not serve any purpose. While basic at this stage in the development, it would be expanded to allow players to load select save data and providing info at a glance to inform the player which save was which. It could also be used as a platform for informing players on potential future updates such as a final release date if this game were to release in an alpha state.</p>
+
+            <p>Next was tweaking related to the stamina system, with some functionality added alongside. These included reworking the double jump into a mechanic that would utilise stamina, and flight. Additonally there was a temporary debug item created that would increase the player's stamina bar to simulate how progressing in the game would influence the gameplay. Firstly, the double jump ended up shifting towards a "boost" mechanic. Instead of being a traditional double jump, it would instead take a large chunk of your stamina bar to give you an additional aerial boost launching you upwards quickly. Next, the flight was implemented as a means to slowly gain altitude while providing a constant passive drain to your stamina. This required some balancing, compared to the "boost" which would obviously be a much quicker method of ascent. It was designed so that with the boost system you would receive a large boost over a short period of time, but would get less vertical height than would be gained by the slow but continuous drain caused by flight.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_boost.gif" class="mx-auto d-block imgfit">
+                <img src="images/glyde_p2/glyde_fly.gif" class="mx_auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Another feature that was added during this period of the game was a respawn plane. This is a crucial feature for a game such as Glyde, due to taking place on an archipelago of sky islands where there would be a high chance of falling off and being unable to make your way back up to the platform you were last on. As Glyde was designed to be a relaxing game the respawn mechanic was designed to be extremely forgiving, taking the player's last grounded position and placing them back there with no penalty aside from a couple of seconds lost to animations and loading. This tracking of the last grounded position would also be useful for saving the game, as it would be the position to respawn the player upon starting up a saved game.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_respawn.gif" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The next feature that was tweaked was the gliding. This was the most important feature to fix as it had the most issues associated with it -- this was obviously a major issue as "Glyde" is the title of the game. The first change came in the form of switching away from the gliding being controlled via the camera. Initially the gliding was controlled by getting the direction the camera was facing. However this prevented the player from being able to as effectively look around their environment, so this was scrapped in favour of tying it to the movement inputs instead. Additionally, having the gliding mechanics be tied directly to the player proved to be an issue that would affect how well the gliding functioned in general. This lead to the creation of a seperate blueprint actor that would handle all the gliding related forces and maths. This seperation allowed for more refined control over the gliding system, fixing a lot of the major issues that the original system had. It also helped make the controlling of the gliding a lot easier to control, clearing up a lot of the confusion that the original system caused when trying to glide left or right of your original heading.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_glide.gif" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The final functional system that was added was a simple weather system. This was implemented after a visual effect was made as will be mentioned in the following section, and was the reason this was considered. This system featured utilised a lot of randomisation to cause the weather to be constantly slowly changing. The first stage would be starting a timer that would randomise itself each time it finished, clamped between two arbitrary values, that would act as a way to cause the weather to shift in ways that wouldn't be easily noticeable or too frequent. After this timer was finished, it would then get another random number, using this as a percent value to decide how much to change the wind speed, and then a coin toss whether it would be an increase or decrease by that amount of speed. Following this speed change, a similar system was used for changing the heading of the wind, with an additional chance for there to be no heading change at all. This wind force was then used to directly affect gliding, slowing you down while gliding upwind, giving extra speed while gliding downwind, and pushing you sideways if gliding perpendicular to the wind direction.<p>
+            <br>
+            <h3>Visual:</h3>
+            <p>The first visual effect to be implemented was a post-process effect that would give a cel-shaded effect. This system was ultimately scrapped as it was based on a physically based lighting system, which is costly in terms of game performance and also has a stronger focus on realism which was never the intention for Glyde.</p>
+           <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_cel.png" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The next visual effect to be implemented was a skybox. This was important for providing more of that cartoon aesthetic which was desired for Glyde. This took a simple texture that was created using Clip Studio Paint, and overlaid two additional textures that would be used for a constant slowly spinning cloud texture.</p>
+
+            <p>One visual effect that was necessary to give a greater sense of motion when sprinting or gliding were action lines (or alternatively known as speed lines). These are lines that appear around the edge of the screen that give the illusion of moving quicker. These were implemented through a post-process effect that would be activated or deactivated, depending on whether the player was gliding/sprinting or not. This effect was achieved through creating a noise texture, getting a vector to radial value, and then using the radial coordinates (with the coordinates' not being swizzled) and then rotating them over time. This is then centred on the screen, with one additional filter to prevent it from appearing in the centre of the screen. On top of this visual effect, another that was combined to further enhance this feeling of moving quickly was an additional post-processing effect that would simulate a "tunnel-vision" effect, by slightly blurring and stretching the edge of the screen.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_lines.gif" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The next visual effect to be implemented was a particle effect through Unreal's Niagara System. This effect was a "bonk" effect that would be played whenever Glyde glides into an upright wall, where the particles themselves would also be oriented to be spawned in the same direction of the wall normal. First two textures were made, then these were converted into materials that could then be used through the particle system itself. This then would spawn several particles in a circular shape around the collision point radiating outward. These particles were stylised clouds and stars that would then get smaller and rotate after spawning before vanishing entirely.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_bonk.gif" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The final visual effect that was made was a stylised wind particle effect, which would let the player be able to tell how strong the in game wind forces are and which direction they are blowing in. The first step to making this Niagara System was to create two models in Blender, one being a slightly curving line, and another being a line doing a loop. These models were then imported into Unreal Engine, where a custom material was created to simulate a wind effect. This material had a dynamic parameter created with an offset and scale value. Then, the particle system itself used two mesh renderers, one for each mesh created earlier in Blender. These meshes would then be rotated dependent on the current wind rotation, and the offset of the animation curve would be directly affected by the current wind speed. This means that if the windspeed was higher, it would cause the offset value to more quickly shift the material down the length of the mesh.</p>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_wind.gif" class="mx-auto d-block imgfit">
+            </div>
+        </div>
+        <br>
+        <br>        
+        <div class="container-md sitemargin" style="color: white;">
+            <h2>Time management:</h2>
+            <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_gantt.png" class="mx-auto d-block imgfit">
+            </div>   
+            <br>
+            <br>         
+            <p>The time management for this project was done through a Gantt Chart. All the major features that were intended to be implemented before the end of year exhibition were written down. While this timeline seemed to be an accurate assessment of how much time would be needed to complete all the features, this project suffered from major delays as it was not the only game that needed to be developed during this semmester. As this was being worked on alongside <a href="https://blackholebirb.github.io/Web-based_portfolio/tekton.html">Tekton</a>, Glyde was often sidelined in favour of Tekton which was the more demanding project. Despite these setbacks, over half of the original laid-out features were implemented, including one of the "optional" features (the tasks marked in a desaturated cyan).</p>
+            
+            <p>A contingency plan that was put in place was assessing which features would be more critical to implement sooner than other features. Several features that weren't implemented were deemed irrelevant to implement compared to other more crucial features. One example of an ignored feature was the game saving, which would not be able to be demonstrated at an exhibit of work and also would not have any tangible effect as the game had no progression elements such as quests. Another example of a feature that was given lower priority due to relying on other features was an options menu. Due to being unable to implement any sound effects or music in time for the exhibit, the options were chosen to be skipped in favour for implementing visual effects instead.</p>
         </div>
         <br>
         <br>
         <div class="container-md sitemargin" style="color: white;">
-            <h2>The final outcome:</h2>
-            <p></p>
+            <h2>Next Steps:</h2>
+            <p>With this next stretch of Glyde development concluded, it's important to assess what the next steps will be as development continues in the future. The biggest change that would be in the future for Glyde is a full refactor, as currently all systems are done through Unreal Engine blueprints. This major refactor would also provide many opportunities to improve code efficiency, while tidying up useless code. This was a step that was planned to have been done much earlier -- after the conclusion of my second year -- however due to various setbacks, this wasn't able to be completed when I initially intended to. This would also serve to give me an incentive to learn how to effectively use C++, while also thinking carefully on how to make more future-proof systems.</p>
+            <br>
+            <br>
+
+            <h3>Gameplay:</h3>
+            <p>There are a numerous amount of gameplay features that would need to be implemented after the code refactor. One of the biggest features would be the questing system and non-player character (NPC) interactions. One big feature that was omitted from the Gantt chart for the development of Glyde this year was any sense of item collection and NPCs. There would be numerous characters to be found in the world that would give Glyde healing seeds in exchange for finding or rescuing them. Additionally there would be an assist character that would help locate the main objectives, giving the player directions and marking them on the map. This would be an important step to bringing Glyde closer to a state of completion, where it could then be released as an available to the public demo.</p>
+
+            <p>On the topic of the map, this would also be another important feature to implement to help prevent the player from getting lost. It would also be useful for marking certain important objectives or other points of interest that would go towards the optional collectibles. While there is a rough sketch of what the possible map layout could be, this was not final and was moreso intended to get a sense of scale for the world and what major islands would be included. There would also be a minimap displayed on the player's display to help them navigate better.</p>
+           <div class="container-md sitemargin flexcontainer" style="max-width:75%;">
+                <img src="images/glyde_p2/glyde_map.png" class="mx-auto d-block imgfit">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Another important feature to be implemented would be improvements to the gliding. As it currently exists, the gliding isn't as useful as it would otherwise be for traversing the vast expanses of open sky that exists between the major islands. Thus, to make it a more useful ability, an additional feature that would utilise the stamina is to have the boost mechanic be usable mid-gliding for a directional impulse of speed. This could be used to regain a good amount of height, or glide a long distance in a shorter span of time. Another change to the gliding would be to make it more forgiving to the player in terms of raw controls, such as allowing the player to bank at a shallow angle yet still turn quickly without losing as much speed or height.</p>
+
+            <p>Additionally, something else that would affect gliding would be the weather system, which would receive additional depth. One definite implementation would be a rare drastic weather change. This is an important feature to implement as otherwise the changes in weather would be slow enough that it could constantly stay facing an average similar heading, requiring good luck for it to rotate any further from the default heading. Other changes to be implemented would be unique weather patterns to make travelling easier or harder. Examples of this are rain which could reduce visibilty and make it harder to glide or thermal columns that gliding around in would give you height.</p>
+            <br>
+            <br>
+            <h3>Visual:</h3>
+            <p>With the other gliding changes being implemented, two additional HUD elements would be implemented as quality of life for the player. One of these would be an <a href="https://en.wikipedia.org/wiki/Attitude_indicator">Attitude Indicator</a> to give the player information on how much pitch or roll they have at that moment if they have no other visual reference to assist them. Another HUD element would be a weather indicator, which would display the current wind heading relative to the direction of the player -- or have it be able to be locked so that up always points north. This would help the player know where the wind is heading and better inform their decisions on where to explore, by deciding if they want to ignore the wind direction or let it aid them in flying in whatever direction it is currently heading.</p>
+
+            <p>The biggest visual change the game would receive would be in terms of Glyde's model itself. As this model was made later on into the development, this model would be tweaked more to bring it closer to the original concept art -- while also being re-rigged in a way that would not cause any errors when imported into Unreal Engine. This would allow for the model to be properly animated which would add a lot of life into the game as Glyde would ideally be very expressive in his movement, which would aid the cartoon aesthetic.</p>
+
+            <p>A potential future visual element that was initially planned would be to implement a day/night cycle. However as this would have no direct impact on the gameplay and not make sense in the context of the game, this was scrapped in favour of a future system that would very slowly progress the day each time a quest was completed.</p>
+            <br>
+            <br>
+            <h3>Audio:</h3>
+            <p>At this stage in development, Glyde currently has no sound effects or music. In future, this would obviously be changed to help make the game feel more alive. Planned sound effects would be a wind breeze, various stepping sounds dependent on floor material and other miscallaneous sound effects for Glyde's movement. Additionally, as the game has a heavy emphasis placed on atmosphere any music that was implemented would follow suit. This means that it would be subtle and gentle, and would utilise a lot of woodwind instruments to fit the theme of a sky-based adventure.</p>
+        </div>
+        <br>
+        <br>
+        <div class="container-md sitemargin" style="color: white;">
+            <h2>Conclusion:</h2>
+            <p>In conclusion, this stage of Glyde's development -- while not as in depth as initially intended -- still was ultimately successful in achieving what was set out to be done. The work undertaken during the length of this span of development this semester has been an invaluable experience in learning new skills that would be useful to take forward in future employment and personal projects. Furthermore, this has allowed me to expand my repertoire of skills I understand how to use, which will aid my workflow especially when working to a brief. This project has also allowed me to refine my existing skills, applying knowledge and techniques I've learned during the course of my degree.</p>
+
+            <p>Despite this project not being as finished to the degree I'd planned for at the start of this academic year, this stretch of development still feels like it was an overall success. This is further emphasised by the general response received regarding Glyde during the end of year exhibit. As was the case last year, it seemed that there was interest in seeing how the game would progress through the next stages of development and in seeing the game being finshed. Additionally, several people who came to see the project the previous year commented on the drastic improvement from the state it was in last year. This is further reassurance that this game shows enough promise to be continued to the point of having an eventual public release.</p> 
+
+            <p>Additionally, this feedback was valuable as inadvertent playtesting as it allowed me to see how people would interact with the game and it's mechanics. The main examples of this were regarding the double jump, which wasn't immediately obvious that it consumed stamina but could be repeated. The other example was the gliding where multiple players didn't realise that diving was necessary to pick up speed first before trying to glide. Another issue players had with gliding was holding forward -- assuming that doing so was necessary to move forward with the gliding, not realising this was causing them to dive. This feedback was and will be crucial for further refinement of the game as it shows that as the developer, I didn't foresee the systems not being intuitive. These mechanics would thus need in-game explanations to assist players in learning them before they have a proper grasp of how the game plays.</p>
         </div>
     </div>
 </body>
